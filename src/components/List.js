@@ -11,21 +11,23 @@ class List extends Component {
     }
 
     return (
-      <div className="">
-        <div className="col-sm-12">
-          <h3>People:</h3>
-          <table className="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              {people}
-            </tbody>
-          </table>
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading"><h3>People</h3></div>
+          <div className="panel-body">
+            <table className="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                {people}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     );

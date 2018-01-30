@@ -15,7 +15,7 @@ class ListItem extends Component {
         <td>{person['first_name']}</td>
         <td>{person['last_name']}</td>
         <td>
-          <button className="btn btn-danger" onClick={this.handleDelete.bind(this)}>
+          <button className="btn btn-danger pull-right" onClick={this.handleDelete.bind(this)}>
             <i className="glyphicon glyphicon-remove"></i>
           </button>
         </td>

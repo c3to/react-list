@@ -14,11 +14,14 @@ h1 {
   color: white;
 }
 
-h3 {
-  width: 100%;
-  text-decoration: underline;
+.container {
+  margin-top: 21px;
 }
 
 .person .btn {
   padding: 1px 3px;
+}
+
+th:last-child {
+  text-align: right;
 }
