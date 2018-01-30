@@ -20,7 +20,11 @@ class App extends Component {
 
   addPerson(newPerson) {
     let people = this.state.people;
-    newPerson.id = people[people.length - 1]['id'] + 1;
+    if(people.length > 0) {
+      newPerson.id = people[people.length - 1]['id'] + 1;
+    } else {
+      newPerson.id = 1;
+    }
     people.push(newPerson);
     this.setState({people:people});
   }
